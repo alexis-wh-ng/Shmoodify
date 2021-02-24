@@ -25,8 +25,8 @@ SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 
 # Client Keys
-CLIENT_ID = '075102bfd14b4cd6baa68b2db1186ecf'
-CLIENT_SECRET = '7ed2f38949bb4821b530515b0507d96c'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
 # Server-side Parameters
 CLIENT_SIDE_URL = "http://127.0.0.1"

@@ -3,7 +3,7 @@ from spotify_requests import spotify
 import startup
 
 app = Flask(__name__)
-app.secret_key = 'thisisasecret'
+app.secret_key = ''
 
 # ----------------------- AUTH API PROCEDURE -------------------------
 
