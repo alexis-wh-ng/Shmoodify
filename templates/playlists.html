@@ -1,0 +1,79 @@
+{% extends "base.html" %} 
+{% block content %}
+<section>
+    <div class="container">
+  
+        <div class="container">
+  
+          <div class='row'>
+            <h1>Playlist Generator</h1>
+            <p>
+              Make a Playlist based on your mood!
+            </p>
+            <hr class="half-rule"/>
+          </div>
+  
+          <div class='row'>
+            <form action="{{ url_for('playlists') }}" method='GET'>
+              <div class="row">
+  
+                    <div class='col-sm-6'>
+                      <label>Criteria:</label>
+                      <p></p>
+                      
+                      <div class="col-lg-10" style='padding-left: 0px;'>
+                        <label>Choose Genre:</label>
+                        <select class='form-group' name='limit'>
+                          <option value='artist'>Hip-Hop</option>
+                          <option value='album'>Pop</option>
+                          <option value='playlist'>Country</option>
+                          <option value='track'>EDM</option>
+                        </select>
+                      </div>
+                      <p></p>
+                      <div class="col-lg-10" style='padding-left: 0px;'>
+                          <label>Popularity: </label>
+                          <select class='form-group' name='limit'>
+                            <option value='artist'>Popular</option>
+                            <option value='album'>Lowkey</option>
+                          </select>
+                      </div>
+                      <p></p>
+                      <div class="col-lg-10" style='padding-left: 0px;'>
+                        <label>Choose Limit: </label>
+                        <select class='form-group' name='limit'>
+                          <option value='artist'>5</option>
+                          <option value='album'>10</option>
+                          <option value='playlist'>15</option>
+                          <option value='track'>20</option>
+                        </select>
+                      </div>
+                      <p></p>
+                      <div class="col-lg-10" style='padding-left: 0px;'>
+                        <label>Choose SHMOOD:</label>
+                        <select class='form-group' name='search_type'>
+                          <option value=''>Happy</option>
+                          <option value=''>Sad</option>
+                          <option value=''>Angry</option>
+                          <option value=''>Peaceful</option>
+                        </select>
+                      </div>                     
+
+                        <div class="input-group">
+                          <span class="input-group-btn">
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div>
+                <p></p>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">Generate</button>
+                </form>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+{% endblock %}
+  
